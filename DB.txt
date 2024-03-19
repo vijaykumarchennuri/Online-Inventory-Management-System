@@ -1,0 +1,19 @@
+create database inventoryDB;
+use inventoryDB;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(12),
+email varchar(30),
+address varchar(40));
+
+create table customer_order(purchaser_name varchar(50),
+product_id varchar(50),
+price varchar(30),
+qty varchar(30),
+amount varchar(30),
+cardno varchar(40),
+cvv varchar(10),
+purchase_date timestamp);
+
+
